@@ -4,7 +4,7 @@ type ErrorObject = {
   [field: string]: string[];
 };
 
-export function yupErrorValidate(err: ValidationError): ErrorObject {
+export function yupErrorValidate(err: ValidationError) {
   const object: ErrorObject = {};
 
   err.inner.forEach((field) => {
